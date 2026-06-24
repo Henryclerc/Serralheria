@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>Rocha Serralheria e Manutenções</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+}
+
+body{
+background:#0a0a0a;
+color:#fff;
+overflow-x:hidden;
+}
+
+.hero{
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),
+url('hero.webp');
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+.hero-content{
+max-width:900px;
+}
+
+.hero h1{
+font-size:4rem;
+color:#ffb000;
+text-shadow:
+0 0 5px #ffb000,
+0 0 10px #ffb000,
+0 0 20px #ff8800,
+0 0 40px #ff8800;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:1.2rem;
+line-height:1.8;
+margin-bottom:30px;
+}
+
+.btn{
+display:inline-block;
+padding:15px 35px;
+border-radius:50px;
+text-decoration:none;
+font-weight:700;
+transition:.3s;
+}
+
+.whats-btn{
+background:#25D366;
+color:white;
+}
+
+.whats-btn:hover{
+transform:translateY(-4px);
+box-shadow:0 0 20px #25D366;
+}
+
+section{
+padding:80px 8%;
+}
+
+.titulo{
+text-align:center;
+font-size:2.5rem;
+margin-bottom:50px;
+color:#ffb000;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:#171717;
+padding:30px;
+border-radius:20px;
+border:1px solid #222;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+border-color:#ffb000;
+box-shadow:0 0 20px rgba(255,176,0,.3);
+}
+
+.card h3{
+color:#ffb000;
+margin-bottom:10px;
+}
+
+.stats{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+}
+
+.stat{
+background:#171717;
+padding:30px;
+border-radius:20px;
+text-align:center;
+}
+
+.stat h2{
+font-size:2.5rem;
+color:#ffb000;
+}
+
+.gallery{
+overflow:hidden;
+}
+
+.track{
+display:flex;
+width:max-content;
+animation:scroll 40s linear infinite;
+}
+
+.track img{
+width:350px;
+height:250px;
+object-fit:cover;
+border-radius:15px;
+margin-right:15px;
+transition:.4s;
+}
+
+.track img:hover{
+transform:scale(1.05);
+}
+
+@keyframes scroll{
+0%{transform:translateX(0);}
+100%{transform:translateX(-50%);}
+}
+
+.formulario{
+max-width:850px;
+margin:auto;
+background:#171717;
+padding:40px;
+border-radius:20px;
+}
+
+.formulario input,
+.formulario select,
+.formulario textarea{
+width:100%;
+padding:15px;
+margin-bottom:15px;
+border:none;
+border-radius:10px;
+background:#222;
+color:white;
+}
+
+.formulario textarea{
+height:120px;
+resize:none;
+}
+
+.formulario button{
+width:100%;
+padding:18px;
+border:none;
+border-radius:50px;
+background:#25D366;
+color:white;
+font-size:18px;
+font-weight:bold;
+cursor:pointer;
+}
+
+.formulario button:hover{
+box-shadow:0 0 20px #25D366;
+}
+
+footer{
+background:black;
+padding:30px;
+text-align:center;
+}
+
+.whatsapp-fixo{
+position:fixed;
+right:20px;
+bottom:20px;
+width:70px;
+height:70px;
+background:#25D366;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:32px;
+text-decoration:none;
+color:white;
+box-shadow:0 0 20px #25D366;
+z-index:999;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:2.3rem;
+}
+
+.track img{
+width:260px;
+height:180px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>ROCHA SERRALHERIA</h1>
+
+<p>
+Portões • Grades • Escadas • Corrimãos<br>
+Manutenção Residencial • Predial • Pequenas Reformas
+</p>
+
+<a href="#orcamento" class="btn whats-btn">
+SOLICITAR ORÇAMENTO
+</a>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="titulo">Nossos Serviços</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>🚪 Portões e Grades</h3>
+<p>Fabricação, instalação e manutenção.</p>
+</div>
+
+<div class="card">
+<h3>🪜 Escadas e Corrimãos</h3>
+<p>Projetos sob medida e acabamento profissional.</p>
+</div>
+
+<div class="card">
+<h3>🏠 Manutenção Residencial</h3>
+<p>Reparos e melhorias para sua casa.</p>
+</div>
+
+<div class="card">
+<h3>🏢 Manutenção Predial</h3>
+<p>Serviços para condomínios e empresas.</p>
+</div>
+
+<div class="card">
+<h3>🔨 Pequenas Reformas</h3>
+<p>Execução rápida e organizada.</p>
+</div>
+
+<div class="card">
+<h3>⚙️ Soldas e Reparos</h3>
+<p>Soluções metálicas e reforços estruturais.</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="titulo">Nossos Números</h2>
+
+<div class="stats">
+
+<div class="stat">
+<h2>500+</h2>
+<p>Serviços realizados</p>
+</div>
+
+<div class="stat">
+<h2>100%</h2>
+<p>Comprometimento</p>
+</div>
+
+<div class="stat">
+<h2>24h</h2>
+<p>Resposta rápida</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="titulo">Serviços Realizados</h2>
+
+<div class="gallery">
+
+<div class="track">
+
+<img src="img1.jpeg">
+<img src="img2.jpeg">
+<img src="img3.jpeg">
+<img src="img4.jpeg">
+<img src="img5.jpeg">
+<img src="img6.jpeg">
+<img src="img7.jpeg">
+<img src="img8.jpeg">
+
+<img src="img1.jpeg">
+<img src="img2.jpeg">
+<img src="img3.jpeg">
+<img src="img4.jpeg">
+<img src="img5.jpeg">
+<img src="img6.jpeg">
+<img src="img7.jpeg">
+<img src="img8.jpeg">
+
+</div>
+
+</div>
+
+</section>
+
+<section id="orcamento">
+
+<h2 class="titulo">Solicite um Orçamento</h2>
+
+<div class="formulario">
+
+<input type="text" id="nome" placeholder="Seu nome">
+
+<input type="text" id="telefone" placeholder="Telefone">
+
+<select id="servico">
+<option>Portões e Grades</option>
+<option>Escadas e Corrimãos</option>
+<option>Manutenção Residencial</option>
+<option>Manutenção Predial</option>
+<option>Pequenas Reformas</option>
+<option>Soldas e Reparos</option>
+</select>
+
+<input type="text" id="cidade" placeholder="Cidade">
+
+<textarea id="descricao" placeholder="Descreva o serviço"></textarea>
+
+<button onclick="enviarWhatsApp()">
+ENVIAR PARA WHATSAPP
+</button>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>Rocha Serralheria e Manutenções</p>
+<p>WhatsApp: (11) 94733-4377</p>
+
+</footer>
+
+<a class="whatsapp-fixo"
+href="https://wa.me/5511947334377"
+target="_blank">
+📱
+</a>
+
+<script>
+
+function enviarWhatsApp(){
+
+const nome=document.getElementById('nome').value;
+const telefone=document.getElementById('telefone').value;
+const servico=document.getElementById('servico').value;
+const cidade=document.getElementById('cidade').value;
+const descricao=document.getElementById('descricao').value;
+
+const texto=
+`Olá, gostaria de um orçamento.
+
+Nome: ${nome}
+
+Telefone: ${telefone}
+
+Serviço: ${servico}
+
+Cidade: ${cidade}
+
+Descrição:
+${descricao}`;
+
+window.open(
+`https://wa.me/5511947334377?text=${encodeURIComponent(texto)}`,
+'_blank'
+);
+
+}
+
+</script>
+
+</body>
+</html>
